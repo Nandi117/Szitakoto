@@ -1,0 +1,65 @@
+{
+    "SzitakotoBehavior": {
+        "checkpoints": [
+            {
+                "steps": 3499980,
+                "file_path": "results\\RUN4\\SzitakotoBehavior\\SzitakotoBehavior-3499980.onnx",
+                "reward": 3020.3936974881058,
+                "creation_time": 1734272707.8543022,
+                "auxillary_file_paths": [
+                    "results\\RUN4\\SzitakotoBehavior\\SzitakotoBehavior-3499980.pt"
+                ]
+            },
+            {
+                "steps": 3999997,
+                "file_path": "results\\RUN4\\SzitakotoBehavior\\SzitakotoBehavior-3999997.onnx",
+                "reward": 2930.7742830164293,
+                "creation_time": 1734273246.5886748,
+                "auxillary_file_paths": [
+                    "results\\RUN4\\SzitakotoBehavior\\SzitakotoBehavior-3999997.pt"
+                ]
+            },
+            {
+                "steps": 4499984,
+                "file_path": "results\\RUN4\\SzitakotoBehavior\\SzitakotoBehavior-4499984.onnx",
+                "reward": 3331.408294711794,
+                "creation_time": 1734274343.589174,
+                "auxillary_file_paths": [
+                    "results\\RUN4\\SzitakotoBehavior\\SzitakotoBehavior-4499984.pt"
+                ]
+            },
+            {
+                "steps": 4999991,
+                "file_path": "results\\RUN4\\SzitakotoBehavior\\SzitakotoBehavior-4999991.onnx",
+                "reward": 3046.053436503691,
+                "creation_time": 1734275400.009173,
+                "auxillary_file_paths": [
+                    "results\\RUN4\\SzitakotoBehavior\\SzitakotoBehavior-4999991.pt"
+                ]
+            },
+            {
+                "steps": 5450226,
+                "file_path": "results\\RUN4\\SzitakotoBehavior\\SzitakotoBehavior-5450226.onnx",
+                "reward": 2896.976704597473,
+                "creation_time": 1734279578.7218378,
+                "auxillary_file_paths": [
+                    "results\\RUN4\\SzitakotoBehavior\\SzitakotoBehavior-5450226.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5450226,
+            "file_path": "results\\RUN4\\SzitakotoBehavior.onnx",
+            "reward": 2896.976704597473,
+            "creation_time": 1734279578.7218378,
+            "auxillary_file_paths": [
+                "results\\RUN4\\SzitakotoBehavior\\SzitakotoBehavior-5450226.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.28.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
