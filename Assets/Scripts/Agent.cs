@@ -45,6 +45,7 @@ public class SzitakotoAgent : Agent
     {
         float forward = actions.ContinuousActions[0]; // Forward/backward movement
         float rotate = actions.ContinuousActions[1];  // Rotation
+        float waterLevel = needOfWater / StartingNeedOfWater;
 
         // Apply movement and rotation
         transform.Translate(Vector3.forward * forward * speed * Time.fixedDeltaTime);
@@ -58,11 +59,25 @@ public class SzitakotoAgent : Agent
 
         //UnityEngine.Debug.Log($"needOfWater: {needOfWater}, StartingNeedOfWater: {StartingNeedOfWater}");
 
-        AddReward(needOfWater/StartingNeedOfWater);
-        //UnityEngine.Debug.Log($"reward: {needOfWater / StartingNeedOfWater}");
+        
+        
+        if (waterLevel >= 0.75f)
+        {
+            AddReward(1);
+        } else if (waterLevel >= 0.5f && waterLevel < 0.75f)
+        {
+            AddReward(0.75f);
+        } else if (waterLevel >= 0.25f && waterLevel < 0.5f)
+        {
+            AddReward(0.5f);
+        } else
+        {
+            AddReward(0.25f);
+        } 
+        // UnityEngine.Debug.Log($"reward: {needOfWater / StartingNeedOfWater}");
 
-        // End episode if thirst runs out
-        if (needOfWater <= 0)
+            // End episode if thirst runs out
+            if (needOfWater <= 0)
         {
             AddReward(-100f);
             EndEpisode();
@@ -93,7 +108,7 @@ public class SzitakotoAgent : Agent
             }
             else
             {
-                needOfWater += Time.fixedDeltaTime * 10.5f;
+                needOfWater += Time.fixedDeltaTime * 25f;
             }
         }
     }

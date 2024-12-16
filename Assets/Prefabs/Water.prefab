@@ -122,8 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d46fa6f9fec0f942b8e9708dbe3fc49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shrinkRate: 0.05
-  minSize: 1
+  shrinkRate: 0.65
+  minSize: 2
   destroyDelay: 0
 --- !u!65 &819318731202072661
 BoxCollider:
